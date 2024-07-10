@@ -1,7 +1,7 @@
 ---
 title: "Essential Linux Commands for Developers"
 description: "Basic Linux Commands: A Quick Guide for Beginners"
-pubDate: "July 8 2024"
+pubDate: "July 9 2024"
 heroImage: "/blog-2.jpg"
 tags: ["Linux","CLI"]
 ---
