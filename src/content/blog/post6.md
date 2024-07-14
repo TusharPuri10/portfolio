@@ -39,7 +39,6 @@ const todo: Todo = {
 - Use schemas to define document structures and enforce validations.
 
 ```tsx
-typescriptCopy code
 import mongoose from 'mongoose';
 
 const todoSchema = new mongoose.Schema({
@@ -56,7 +55,6 @@ const todoSchema = new mongoose.Schema({
 - Validate request data before processing to maintain data integrity.
 
 ```tsx
-typescriptCopy code
 import { z } from 'zod';
 
 const CreateTodoRequest = z.object({
@@ -85,7 +83,6 @@ if (!result.success) {
 - Use try-catch blocks to handle exceptions and provide meaningful error messages.
 
 ```tsx
-typescriptCopy code
 try {
   const todo = new Todo({
     title: requestData.title,
