@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, p1, p2, p3, p4, p5, p6, badge, tags, url,  github, live , target= "_blank", colab} = Astro.props;
+const { title, img, desc, p1, p2, p3, small, badge, tags, url,  github, live , target= "_blank", colab} = Astro.props;
 import { Image } from "astro:assets";
 ---
 
@@ -16,7 +16,7 @@ import { Image } from "astro:assets";
             height={422}
             format="webp"
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            class={`${small ? "max-w-full max-w-[8rem] max-h-[8rem] rounded-lg bg-black" : "max-w-full md:max-w-[13rem] rounded-lg"}`}
           />
         )
       }
@@ -32,9 +32,6 @@ import { Image } from "astro:assets";
           <li>{p1}</li>
           <li>{p2}</li>
           <li>{p3}</li>
-          {p4 && <li>{p4}</li>}
-          {p5 && <li>{p5}</li>}
-          {p6 && <li>{p6}</li>}
         </ul>}
         <p class="py-1 text-1xl">{desc}</p> 
         <div class="card-actions justify-end">
