@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, p1, p2, p3, small, badge, tags, url,  github, live , target= "_blank", colab} = Astro.props;
+const { title, img, desc, p1, p2, p3, p4=null, small, badge, tags, url,  github, live , target= "_blank", colab} = Astro.props;
 import { Image } from "astro:assets";
 ---
 
@@ -32,6 +32,7 @@ import { Image } from "astro:assets";
           <li>{p1}</li>
           <li>{p2}</li>
           <li>{p3}</li>
+          {p4 && <li>{p4}</li>}
         </ul>}
         <p class="py-1 text-1xl">{desc}</p> 
         <div class="card-actions justify-end">
